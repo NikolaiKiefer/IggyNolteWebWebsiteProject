@@ -1,5 +1,11 @@
-<div class="navigation">
- <button mat-raised-button>Start</button>
- <button mat-raised-button>Bilder</button>
- <button mat-raised-button>Musik</button>
+<div id="navigation" fxLayout="row">
+  <div fxFlex="66" fxLayoutAlign="start center">
+    <img src="assets/images/logo_test.svg" fxFlex="2" fxFlexOffset="5">
+    <h3>ggyNolteWeb</h3>
+  </div>
+  <div fxLayout="row-reverse" fxFlex="33" fxLayout.xs="column-reverse" fxLayoutGap="5px">
+    <button mat-raised-button fxFlex="20" fxFlex.xs="30" fxFlexOrder="3">Start</button>
+    <button mat-raised-button fxFlex="20" fxFlex.xs="30" fxFlexOrder="2">Bilder</button>
+    <button mat-raised-button fxFlex="20" fxFlex.xs="30" fxFlexOrder="1">Musik</button>
+  </div>
 </div>

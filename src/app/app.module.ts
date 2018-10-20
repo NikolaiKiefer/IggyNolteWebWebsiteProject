@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import {MatButtonModule} from '@angular/material/button';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
