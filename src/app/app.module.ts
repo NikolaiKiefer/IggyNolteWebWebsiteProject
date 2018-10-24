@@ -9,6 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import {MatButtonModule} from '@angular/material/button';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PictureGalleryComponent } from './picture-gallery/picture-gallery.component';
+import {MatCardModule} from '@angular/material';
+import { MusicComponent } from './music/music.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 @NgModule({
@@ -16,14 +20,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppComponent,
     StartPageComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    PictureGalleryComponent,
+    MusicComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
     FlexLayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
