@@ -13,6 +13,7 @@ import { PictureGalleryComponent } from './picture-gallery/picture-gallery.compo
 import {MatCardModule} from '@angular/material';
 import { MusicComponent } from './music/music.component';
 import { LoaderComponent } from './loader/loader.component';
+import { KontactComponent } from './kontact/kontact.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { LoaderComponent } from './loader/loader.component';
     HeaderComponent,
     PictureGalleryComponent,
     MusicComponent,
-    LoaderComponent
+    LoaderComponent,
+    KontactComponent
   ],
   imports: [
     BrowserModule,
