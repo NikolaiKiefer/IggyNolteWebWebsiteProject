@@ -10,10 +10,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PictureGalleryComponent } from './picture-gallery/picture-gallery.component';
-import {MatCardModule} from '@angular/material';
+import {MatCardModule, MatChipsModule, MatDividerModule, MatStepperModule} from '@angular/material';
 import { MusicComponent } from './music/music.component';
 import { LoaderComponent } from './loader/loader.component';
 import { KontactComponent } from './kontact/kontact.component';
+import { ArticleComponent } from './article/article.component';
+import { ArticleListComponent } from './article-list/article-list.component';
+import { SortAlgorithmenComponent } from './sort-algorithmen/sort-algorithmen.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { KontactComponent } from './kontact/kontact.component';
     PictureGalleryComponent,
     MusicComponent,
     LoaderComponent,
-    KontactComponent
+    KontactComponent,
+    ArticleComponent,
+    ArticleListComponent,
+    SortAlgorithmenComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import { KontactComponent } from './kontact/kontact.component';
     MatButtonModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatChipsModule,
+    MatDividerModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

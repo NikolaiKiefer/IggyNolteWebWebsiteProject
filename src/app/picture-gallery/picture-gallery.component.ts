@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PictureCard} from '../models/models';
 
 @Component({
   selector: 'app-picture-gallery',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PictureGalleryComponent implements OnInit {
 
-  numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  pictureCards: [PictureCard];
   constructor() { }
 
   ngOnInit() {
+    this.pictureCards = [{title: 'Cat',
+    subTitle: 'Stray Cat',
+    img: 'http://lorempixel.com/400/200',
+    text: 'Beispiel Katzen Text'}];
   }
 
 }

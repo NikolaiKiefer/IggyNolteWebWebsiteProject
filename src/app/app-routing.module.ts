@@ -4,13 +4,17 @@ import {PictureGalleryComponent} from './picture-gallery/picture-gallery.compone
 import {StartPageComponent} from './start-page/start-page.component';
 import {MusicComponent} from './music/music.component';
 import {KontactComponent} from './kontact/kontact.component';
+import {ArticleListComponent} from './article-list/article-list.component';
+import {SortAlgorithmenComponent} from './sort-algorithmen/sort-algorithmen.component';
 
 
 const routes: Routes = [
   {path: 'pictures', component: PictureGalleryComponent},
   {path: '', component: StartPageComponent},
   {path: 'music', component: MusicComponent},
-  {path: 'kontact', component: KontactComponent}
+  {path: 'kontact', component: KontactComponent},
+  {path: 'articles', component: ArticleListComponent},
+  {path: 'sortAlgos', component: SortAlgorithmenComponent}
 ];
 
 @NgModule({
