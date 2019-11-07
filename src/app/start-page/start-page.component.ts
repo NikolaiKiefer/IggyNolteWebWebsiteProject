@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-start-page',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./start-page.component.scss']
 })
 export class StartPageComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
 
+  jumpto(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth'});
+  }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
+
 
 @Component({
   selector: 'app-sort-algorithmen',
@@ -7,14 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SortAlgorithmenComponent implements OnInit {
 newArray: [number];
-numberArray = [2, 5, 4, 1, 7];
+numberArray = [];
+
   constructor() { }
 
   ngOnInit() {
-    //this.newArray = this.bubblesort(this.numberArray);
-    console.log(this.newArray);
-    this.newArray = this.mergesort(this.numberArray);
-    console.log(this.newArray);
+  }
+
+  addNumber(number) {
+    this.numberArray.push(number);
   }
 
   bubblesort(numberArray) {
@@ -22,7 +25,7 @@ numberArray = [2, 5, 4, 1, 7];
 
     function bubbleSortInner( numberArray, length) {
     for (let i = 0; i < length;) {
-      if (numberArray[i] > numberArray[i + 1]) {
+      if (+numberArray[i] > +numberArray[i + 1]) {
         const temp = numberArray[i];
         numberArray[i] = numberArray[i + 1];
         numberArray[i + 1] = temp;
@@ -62,7 +65,7 @@ numberArray = [2, 5, 4, 1, 7];
     function merge(left, right) {
       let mergedArray = [];
       while(left.length > 0 && right.length > 0) {
-        if (left[0] <= right[0]) {
+        if (+left[0] <= +right[0]) {
           mergedArray.push(left[0]);
           left.shift();
         } else {

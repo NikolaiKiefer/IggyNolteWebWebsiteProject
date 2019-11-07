@@ -1,6 +1,17 @@
-<p>
-  {{numberArray}}
-</p>
+<div>
+  <input #NumberInput>
+  <button (click)="addNumber(NumberInput.value); NumberInput.value = ''">add Number</button>
+  <p>
+    {{numberArray}}
+  </p>
+</div>
 <p>{{newArray}}</p>
-<button>Bubblesort</button>
+<button (click)="bubblesort(numberArray)">Bubblesort</button>
 <button (click)="numberArray = mergesort(numberArray)">Mergesort</button>
+<div fxLayout="row">
+  <div *ngFor="let number of numberArray">
+    <div class="numberBox">
+      <p>{{number}}</p>
+    </div>
+  </div>
+</div>

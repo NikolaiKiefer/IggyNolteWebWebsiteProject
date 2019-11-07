@@ -1,10 +1,13 @@
 <div id="navigation" fxLayout="row">
   <div fxFlex="66" fxLayoutAlign="start center">
-    <h3 routerLink="/" fxFlexOffset="5">IggyNolteWeb</h3>
+    <a routerLink="/" fxLayoutAlign="start center" style="text-decoration: none">
+    <img alt="logo" src="../../assets/images/logos/iggynolte_logo.svg" style="max-height: 80px">
+    <h3>IggyNolteWeb</h3>
+    </a>
   </div>
-  <div fxLayout="row-reverse" fxFlex="33" fxLayout.xs="column-reverse" fxLayoutGap="5px">
-    <button mat-raised-button fxFlex="20" fxFlex.xs="30" fxFlexOrder="3" routerLink="/">Start</button>
-    <button mat-raised-button fxFlex="20" fxFlex.xs="30" fxFlexOrder="2" routerLink="/pictures">Bilder</button>
-    <button mat-raised-button fxFlex="20" fxFlex.xs="30" fxFlexOrder="1" routerLink="/music">Musik</button>
+  <div fxLayout="row-reverse" fxFlex="33" fxLayout.xs="column-reverse" fxLayoutGap="5px" fxLayoutAlign="start center">
+    <a class="header-links" fxFlex="20" fxFlex.xs="30" fxFlexOrder="3" routerLink="/">Start</a>
+    <a class="header-links" fxFlex="20" fxFlex.xs="30" fxFlexOrder="2" routerLink="/pictures">Bilder</a>
+    <a class="header-links" fxFlex="20" fxFlex.xs="30" fxFlexOrder="1" routerLink="/music">Musik</a>
   </div>
 </div>

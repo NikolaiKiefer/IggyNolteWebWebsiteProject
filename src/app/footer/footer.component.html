@@ -1,10 +1,16 @@
 <div id="footer-main" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
-  <div fxLayout="column">
-    <a routerLink="/kontact">Kontakt</a>
-    <a routerLink="/projects">Projekte</a>
-  </div>
-  <div fxLayout="column">
-    <a routerLink="/resume">Lebenslauf</a>
-    <a routerLink="/sortAlgos">Skills</a>
+  <div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+      <a href="https://github.com/NikolaiKiefer">
+        <button mat-stroked-button="primary" class="logo_button">
+          <img class="logo" src="assets/images/logos/GitHub-Mark-32px.png">Github
+        </button>
+      </a>
+      <a href="https://stackoverflow.com/users/10567964/nikolai-kiefer">
+        <button mat-stroked-button="primary" class="logo_button">
+          <img class="logo" src="assets/images/logos/so-icon.png">Stackoverflow
+        </button>
+      </a>
+    </div>
   </div>
 </div>

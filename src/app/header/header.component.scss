@@ -1,15 +1,25 @@
 #navigation{
-  background-color: black;
+  background-color: rgb(255, 255, 250);
   height: 100%;
 }
 h1{
   color: white;
 }
 h3{
-  color: white;
+  color: black;
 }
 button{
   margin: 10px;
+}
+.header-links{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Circular,Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.header-links:hover{
+  color: #0eed3b;
 }
 
 

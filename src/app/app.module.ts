@@ -17,6 +17,7 @@ import { KontactComponent } from './kontact/kontact.component';
 import { ArticleComponent } from './article/article.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { SortAlgorithmenComponent } from './sort-algorithmen/sort-algorithmen.component';
+import { ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { SortAlgorithmenComponent } from './sort-algorithmen/sort-algorithmen.co
     MatCardModule,
     MatChipsModule,
     MatDividerModule,
-    MatStepperModule
+    MatStepperModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

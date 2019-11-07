@@ -1,13 +1,23 @@
-<div fxLayout="wrap" fxLayout.xs="column" id="start-page-main">
+<!--div style="width: 100%">
+  <img fxLayoutAlign="center center" src="/assets/images/background-calm-clouds-747964.jpg"
+       (scroll)="jumpto(maincontent)" style="width: 100vw; height: 100vh;">
+</div-->
+
+
+<!--div fxLayout="wrap" fxLayout.xs="column" id="start-page-main" #maincontent>
   <div fxFlex="20" fxFlexOrder="1" fxFlexOrder.xs="2" class="outer-content">
   </div>
   <div fxFlex="80" fxFlexOrder="2" fxFlexOrder.xs="1" fxLayout="column">
     <img fxLayoutAlign="center center" src="/assets/images/banner_svg.svg" style="height: 100%; width: 100%">
-    <p>Hallo und herzlich willkommen auf meiner kleinen Single Page Website. Dies ist der Versuch durch Angular eine eigene kleine Seite einzurichten</p>
-    <a routerLink="/articles">
+    <p>Hallo und herzlich willkommen auf meiner kleinen Single Page Website. Dies ist der Versuch durch Angular eine eigene kleine Seite einzurichten</p-->
+    <!--a routerLink="/articles">
       <button mat-raised-button="primary">My Articles</button>
-    </a>
+    </a-->
+    <!--app-article-list></app-article-list>
   </div>
   <div fxFlex="20" fxFlexOrder="3" fxFlexOrder.xs="3" class="outer-content">
   </div>
+</div-->
+<div style="background-color: rgba(227, 227, 227, 0.5)">
+<app-article-list></app-article-list>
 </div>
