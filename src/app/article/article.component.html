@@ -1,22 +1,32 @@
-<div fxLayout="row">
-  <div fxFlex="20">
+<div fxLayout="row" >
+  <div fxFlex="15">
   </div>
-  <div fxFlex="60" fxLayout="column" style="background-color: white; padding-right: 5px; padding-left: 5px">
-    <div class="artikle-title">
-      <img src="">
+  <div fxFlex="70" fxLayout="row" style="background-color: white; padding: 10px" [class.mat-elevation-z2]="true">
+    <div fxLayoutAlign="center center" fxFlex="33">
+      <img style="width: 100%" src="../../assets/images/logos/iggynolte_logo.svg">
     </div>
-    <div fxLayoutAlign="center center">
-      <img style="width: 100%" src="assets/images/{{article.blogImg}}">
-    </div>
-    <mat-divider></mat-divider>
+    <div fxFlex="67" fxLayout="column" fxLayoutGap="15px" style="margin-left: 5px">
+      <div class="artikle-title">
+        <h3>{{article.title}}</h3>
+      </div>
+      <div class="artikle-author">
+        <p>Author: {{article.author}}</p>
+      </div>
+      <div class="artikle-vorschau-text">
+        <p>{{article.text}}</p>
+      </div>
     <div>
-     {{article.text}}
-    </div>
-    <div>
-    <mat-chip-list fxLayout="row">
-      <mat-chip *ngFor="let chip of article.chips">{{chip.name}}</mat-chip>
-    </mat-chip-list>
+      <mat-chip-list fxLayout="row">
+        <mat-chip *ngFor="let chip of article.chips" style="font-weight: bold; max-height: 5px">{{chip.name}}</mat-chip>
+      </mat-chip-list>
+      </div>
+      <div>
+        <button mat-button routerLink="/article/{{article.articleNumber}}"
+                style="background-color: dodgerblue; color: white">
+          Read More...
+        </button>
+      </div>
     </div>
   </div>
-  <div fxFlex="20"></div>
+  <div fxFlex="15"></div>
 </div>

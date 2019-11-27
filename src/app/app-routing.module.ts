@@ -6,6 +6,7 @@ import {MusicComponent} from './music/music.component';
 import {KontactComponent} from './kontact/kontact.component';
 import {ArticleListComponent} from './article-list/article-list.component';
 import {SortAlgorithmenComponent} from './sort-algorithmen/sort-algorithmen.component';
+import {ArticleDetailsComponent} from './article-details/article-details.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'music', component: MusicComponent},
   {path: 'kontact', component: KontactComponent},
   {path: 'articles', component: ArticleListComponent},
-  {path: 'sortAlgos', component: SortAlgorithmenComponent}
+  {path: 'sortAlgos', component: SortAlgorithmenComponent},
+  {path: 'article/:id', component: ArticleDetailsComponent}
 ];
 
 @NgModule({

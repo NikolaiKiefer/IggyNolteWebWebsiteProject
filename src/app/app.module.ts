@@ -18,6 +18,7 @@ import { ArticleComponent } from './article/article.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { SortAlgorithmenComponent } from './sort-algorithmen/sort-algorithmen.component';
 import { ReactiveFormsModule} from '@angular/forms';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ReactiveFormsModule} from '@angular/forms';
     KontactComponent,
     ArticleComponent,
     ArticleListComponent,
-    SortAlgorithmenComponent
+    SortAlgorithmenComponent,
+    ArticleDetailsComponent
   ],
   imports: [
     BrowserModule,

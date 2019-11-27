@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-article',
@@ -8,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ArticleComponent implements OnInit {
   @Input() article: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     console.log(this.article);
